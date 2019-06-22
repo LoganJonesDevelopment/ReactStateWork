@@ -1,26 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+     super(props);
+   
+     this.state = {
+        intro: "This is a small app I made to practice using state in React",
+        header: "Header pulled from state...",
+        content: "Content pulled from state..."
+     }
+  }
+  render() {
+     return (
+        <div>
+           <h1>{this.state.intro}</h1>
+           <h3>{this.state.header}</h3>
+           <h4>{this.state.content}</h4>
+        </div>
+     );
+  }
 }
 
 export default App;
