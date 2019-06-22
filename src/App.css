@@ -31,3 +31,35 @@
     transform: rotate(360deg);
   }
 }
+
+.intro {
+  font-family: cursive;
+  color: green;
+  border: 1px solid slateblue;
+  text-align: center;
+}
+.mainContent {
+  
+}
+.intro:hover {
+  color: rebeccapurple;
+}
+
+.header {
+  font-family: cursive;
+  color: rgb(214, 243, 83);
+  text-align: center;
+}
+.content {
+  font-family: cursive;
+  color: rgb(150, 245, 150);
+  text-align: center;
+}
+.props {
+  background-color: beige;
+  width: 300px;
+  text-align: center;
+-webkit-box-shadow: 128px 34px 6px -12px rgba(0,0,0,0.7);
+-moz-box-shadow: 128px 34px 6px -12px rgba(0,0,0,0.7);
+box-shadow: 128px 34px 6px -12px rgba(0,0,0,0.7);
+}
